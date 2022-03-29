@@ -8,9 +8,6 @@
             // the correct url will be waiting in the browser's history for
             // the single page app to route accordingly.
             (function(l) {
-                const BASE_URL = '/formore'
-                if (l.pathname.replace(BASE_URL, '') === '/') l.pathname = BASE_URL + '/hot'
-
                 if (l.search[1] === '/' ) {
                     var decoded = l.search.slice(1).split('&').map(function(s) { 
                         return s.replace(/~and~/g, '&')
@@ -19,4 +16,4 @@
                         l.pathname.slice(0, -1) + decoded + l.hash
                     );
                 }
-            }(window.location))</script><script defer="defer" src="/formore/js/chunk-vendors.28de55d8.js"></script><script defer="defer" src="/formore/js/app.e317796b.js"></script><link href="/formore/css/chunk-vendors.cc486695.css" rel="stylesheet"><link href="/formore/css/app.14a81add.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but formore doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
+            }(window.location))</script><script defer="defer" src="/formore/js/chunk-vendors.28de55d8.js"></script><script defer="defer" src="/formore/js/app.cccfe7e1.js"></script><link href="/formore/css/chunk-vendors.cc486695.css" rel="stylesheet"><link href="/formore/css/app.14a81add.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but formore doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
