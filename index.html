@@ -9,7 +9,7 @@
             // the single page app to route accordingly.
             (function(l) {
                 const BASE_URL = '/formore'
-                if (l.pathname.replace(BASE_URL, '') === '/') l.pathname = '/hot'
+                if (l.pathname.replace(BASE_URL, '') === '/') l.pathname = BASE_URL + '/hot'
 
                 if (l.search[1] === '/' ) {
                     var decoded = l.search.slice(1).split('&').map(function(s) { 
